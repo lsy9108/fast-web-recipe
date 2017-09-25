@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700');
+
+/*    Reset CSS  */
+* { margin:0;  padding:0;}
+ol,ul {list-style: none; }
+body {width:100%; height:100%; background:#fff; color:#222; /*font-family: 'Source Sans Pro', sans-serif;*/ font-family: 'Oxygen', sans-serif;}
+a { outline:0; text-decoration:none; color:steelblue;}
+img { border:0;}
+
+.wrapper { width:100vw; height:100vh; border:5px solid red;}
+
+/* left panel */
+.left { width:60vw; height:100vh; background:rgba(255,255,255); box-shadow:inset 0 0 20px #ddd; border:5px solid blue;}
+.left>.leftTop {width:86%; height:20%; margin:7%; position:relative; }
+.left>.leftTop>h1 { float:left; width:60%; }
+.left>.leftTop>.contact a{ float:left; position:relative; margin-top:7%; color:#222; font-weight:600; overflow:hidden;}
+.left>.leftTop>.contact a:before {content:""; position:absolute; left:-5px; top:50%; border-bottom:2px solid #111; width:105%; left:-100px;  transition:left .8s;}
+.left>.leftTop>.contact a:hover:before { left:0; }
+
+
+.left>section { width:86%; height:80%; margin:7%; }
+
+
+.left2 { }
+
+/* right panel */
+.right { width:40vw; height:100vh; border:5px solid green;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+
+<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+    <defs>
+        <style>
+        .st0{fill:#fff; stroke:#333333;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:1;}
+            
+        .st0{
+            stroke-dasharray:2000;
+            stroke-dashoffset:0;
+            -webkit-animation:dash 11s linear forwards;
+            -o-animation:dash 11s linear forwards;
+            -moz-animation:dash 11s linear forwards;
+            animation:dash 11s linear forwards;
+            transition:all .8s;
+        }
+            #logo {
+            cursor:pointer;
+            }
+        #logo:hover .st0{
+            fill:#222;
+            stroke:#222;
+            stroke-width:2;
+        }    
+        
+       <!-- #logo.clickit .st0 {
+            stroke:#1b75bb;
+            fill:#1b75bb;
+        }-->
+            
+        @-webkit-keyframes dash{
+            from {
+            stroke-dashoffset:2000;
+            }
+            to {
+            stroke-dashoffset:0;
+            }
+        }
+            
+        </style>
+        <script type="text/javascript">
+            var clicker = document.querySelector('#logo');
+            
+            clicker.addEventListener('click',function(){
+                this.classList.toggle('clickit');
+            
+            });
+        </script>
+    </defs>    
+    
+<path class="st0" d="M91.237,5.229c-2.526,0-4.575,2.003-4.575,4.476v20.142c0,8.639-7.183,15.665-16.012,15.665
+	c-8.828,0-16.011-7.026-16.011-15.665c0-13.574-11.287-24.617-25.161-24.617S4.318,16.272,4.318,29.847
+	c0,8.421,4.349,15.865,10.962,20.305C8.958,54.438,4.735,61.478,4.438,69.485L4.415,70.28c0,4.678,1.245,9.004,3.57,12.733
+	C12.385,90.188,20.412,95,29.568,95c8.576,0,16.159-4.224,20.702-10.654c4.576,6.177,12.007,10.201,20.381,10.201
+	c13.874,0,25.161-11.043,25.161-24.617V9.705C95.812,7.233,93.764,5.229,91.237,5.229z M29.568,54.729
+	c6.282,0,11.728,3.562,14.347,8.728c1.009,2.051,1.575,4.349,1.575,6.772c0,8.637-7.182,15.665-16.011,15.665
+	c-6.009,0-11.252-3.257-13.991-8.06c-1.229-2.216-1.927-4.752-1.927-7.443C13.561,61.754,20.741,54.729,29.568,54.729z
+	 M86.662,69.93c0,8.639-7.183,15.666-16.012,15.666c-8.378,0-15.27-6.331-15.951-14.358l0.022-0.847
+	c0-3.846-0.907-7.487-2.521-10.733c-3.907-8.003-12.104-13.633-21.661-14.024c-1.061-0.122,0,0-1.061-0.122
+	c-8.769-1.006-16.012-7.026-16.012-15.665c0-8.638,7.184-15.666,16.012-15.666c8.829,0,16.011,7.028,16.011,15.666
+	c0,13.574,11.288,24.616,25.161,24.616c6.078,0,11.659-2.118,16.012-5.64V69.93z"/>
+</svg>

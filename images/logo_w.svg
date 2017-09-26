@@ -3,7 +3,7 @@
 	 width="100px" height="100px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
     <defs>
         <style>
-        .st0{fill:#fff; stroke:#333333;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:1;}
+        .st0{fill:transparent; stroke:#ffffff;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:1;}
             
         .st0{
             stroke-dasharray:2000;
@@ -14,19 +14,21 @@
             animation:dash 11s linear forwards;
             transition:all .8s;
         }
-            #logo {
+            
+        .left>h1 {
             cursor:pointer;
-            }
-        #logo:hover .st0{
+        }
+            
+        .left>h1:hover .st0{
             fill:#222;
             stroke:#222;
             stroke-width:2;
         }    
         
-       <!-- #logo.clickit .st0 {
+        .left>h1.clickit .st0 {
             stroke:#1b75bb;
             fill:#1b75bb;
-        }-->
+        }
             
         @-webkit-keyframes dash{
             from {
@@ -39,7 +41,7 @@
             
         </style>
         <script type="text/javascript">
-            var clicker = document.querySelector('#logo');
+            var clicker = document.querySelector('h1');
             
             clicker.addEventListener('click',function(){
                 this.classList.toggle('clickit');

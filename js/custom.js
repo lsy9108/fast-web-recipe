@@ -1,40 +1,26 @@
 ﻿$(document).ready(function(){       
-	/* make an empty variable */
-    var imgs = "";
+	/* on load */
+    /*
     
-    /* increase variable 'i' from 0 to 199 using for script */
-    for(var i=0; i<200; i++){
-        
-        /* add imgs until they become 200 */
-        imgs += "<img src = 'img/pic" + i + ".jpg'>"
-    }
-	
-    /* add all those created imgs in html */
-    $("section").html(imgs);
-
-    
-    /* when mouse moving */
-    $("body").on("mousemove", function(e){
-        
-        /* save current screen width */
-        var wid = $(window).width();
-        
-        /* save where mouse be at */
-        var posX = e.pageX;
-        
-        /* save persentage devided by 200 (number of imgs) */
-        var percent = Math.floor((posX/wid)*200);
-        
-        /* output */
-        /*$("h3").text(percent);*/
-        
-        /* hide all the imgs */
-        $("section>img").hide();
-        
-        /* show the only applicable img of mouse location */
-        $("section>img").eq(percent).show();
+    $(window).load(function(){
+        alert('테스트');
     });
     
+    
+    $("#id").load(function(){
+        alert('테스트');
+    });
+    
+    */
+    
+    
+    /* contact, home btn click event */
+    $(".left>.leftTop>.contact a").on("click",function(){
+        $(".left2").css({left:"0"});
+    });
+    $(".left2>.leftTop>.home a").on("click",function(){
+        $(".left2").css({left:"-60%"});
+    });
     
 }); // the end
 

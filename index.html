@@ -2,16 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="compatible" content="IE-edge, chrome-1">
-    <meta name="viewpoint" content="width-device-width, initial-scale="1.0>
-    <title>SVG Line Animateion</title>
+    <meta name="viewport" content="width=device-width" initial-scale=1>
+    <title>Design.SY</title>
+    <link href="css/fontello/sns-embedded.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />	
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/prefixfree.min.js"></script>	
 </head>
 <body>
-    <div style="text-align:center; position:relative; margin:300px auto;">
-        
-        <object>
-            <embed src="logo1.svg" width="10%" height="10%">
-        </object>
-    </div>
+  <!-- wrapper -->
+   <div class="wrapper">
+    
+     <!-- left panel -->
+     <div class="left">    <!-- background:rgba(255,255,255) box-shadow:inset -->
+         <div class="leftTop"> 
+             <h1><a href="portfolio.html"><embed src="images/logo.svg"></a></h1>
+             <span class="contact"><a href="javascript:void(0)">CONTACT</a></span> <!-- line-through -->
+         </div>
+         <section>
+             <h2><em></em>SO-YOUNG LIM</h2>    <!-- font-height line on the left -->
+             <span>UI &sdot; UX &sdot; Interaction &sdot; Web Design</span>
+             <div class="dot"></div> <!-- #222 -->
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum minima qui officia temporibus a sequi impedit, blanditiis cumque ea eius, quisquam quia ducimus cum, at est perferendis. </p>
+             <p>Suscipit quas consequatur quasi quod fugit! Beatae, ullam, fugit! Dolor, at vero incidunt tempora quibusdam adipisci soluta nesciunt aliquid, asperiores commodi numquam!</p>
+         </section>
+     </div>
+     
+     <!-- contact hover left panel -->
+     <div class="left2"> <!-- background:rgba(0,0,0,.8)-->
+         <div class="leftTop">
+             <h1><a href="portfolio.html"><embed src="images/logo_w.svg"></a></h1> <!-- stroke:#fff -->
+             <span class="home"><a href="javascript:void(0)">HOME</a></span> <!-- line-through -->
+         </div>
+         <section>
+             <h2><em></em>CONTACT ME</h2>    <!-- font-height line on the left -->
+             <span>Feel free to contact me via social, or by writing to <a href="mailto:lsy9108@gmail.com">lsy9108@gmail.com</a></span>
+             <div class="dot"></div> <!-- #fff -->
+             <ul>
+                 <li><a href="#"><i class="icon-facebook"></i></a></li>
+                 <li><a href="#"><i class="icon-github"></i></a></li>
+                 <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                 <li><a href="#"><i class="icon-instagram"></i></a></li>
+             </ul>
+         </section>
+     </div>
+     
+     <!-- right panel -->
+     <div class="right">
+      
+       <!-- sliding img -->
+       <div class="slide">
+        <ul>    
+            <li><a href="#"><img src="images/img1.jpg"  alt="img1"></a></li>
+            <li><a href="#"><img src="images/img2.jpg" alt="img2"></a></li>
+            <li><a href="#"><img src="images/img3.jpg"  alt="img3"></a></li>
+        </ul>
+       </div>
+       <!-- portfolio -->
+        <div id="portfolio">
+            <a href="#">VIEW PORTFOLIO <i class="icon-plus"></i></a>
+        </div>
+     </div>
+     
+    <!-- footer -->
+    <!--<footer>
+        <p>ⓒ 2017 SO-YOUNG LIM. ALL RIGHTS RESERVED. </p>
+    </footer>-->
+   </div> <!-- wrapper -->   
+   <script src="js/custom.js"></script>
 </body>
 </html>

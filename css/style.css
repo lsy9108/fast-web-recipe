@@ -8,7 +8,7 @@ body {width:100%; height:100%; background:#fff; color:#222; /*font-family: 'Sour
 a { outline:0; text-decoration:none; color:steelblue;}
 img { border:0;}
 
-.wrapper { width:100vw; height:100vh; position:relative; outline:5px solid red;}
+.wrapper { width:100vw; height:100vh; position:relative;}
 
 /* left panel */
 .left {position:absolute; width:60%; height:100%; background:rgba(255,255,255); box-shadow:inset 0 0 30px #eee;}
@@ -44,8 +44,14 @@ img { border:0;}
 
 /* right panel */
 .right {position:absolute; right:0; width:40%; height:100%; }
-.slide {position:relative; width:100%; height:100%; overflow:hidden;}
-.slide>li>img {position:absolute;}
+.slide {position:relative; width:100%; height:100%; overflow:hidden; }
+.slide li {position:absolute; width:100%; height:100%; left:0; top:0; background-size:cover; vertical-align: top;}
+
+/*random imgs slide*/
+.slide li.img1{background-image:url(../images/img1.jpg);}
+.slide li.img2{background-image:url(../images/img2.jpg);}
+.slide li.img3{background-image:url(../images/img3.jpg);}
+
 #portfolio { position:fixed; z-index: 10; right:0; bottom:0; width:300px; height:150px; background-color:#fff; text-align: center; line-height: 150px; box-shadow:inset 0 0 30px #eee;}
 #portfolio a {width:100%; height:100%; font-size:1rem; letter-spacing: 2px;}
 #portfolio a i { font-size: 1.1rem;}
@@ -53,7 +59,7 @@ img { border:0;}
 
 
 
-
+@media 
 
 
 

@@ -3,15 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" initial-scale=1>
-    <title>SO-YOUNG LIM | UX DESIGNER</title>
+    <title>SYL | UX DESIGNER</title>
     <link href="css/fontello/sns-embedded.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />	
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="js/prefixfree.min.js"></script>	
+	<script type="text/javascript" src="js/prefixfree.min.js"></script>
 </head>
-<body>
+<body onload="document.querySelector('body').style.opacity='1'">
+ <!--mojs-->
+ <script src="//cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+    <script>
+        var first = new mojs.Shape({
+            shape:'circle',
+            radius:{0:150},
+            stroke:'#02c4e7',
+            strokeWidth:{10:0}, /* 테두리가 있다가 없어지게 */
+            fill:'none',
+            left:0, /* 절대위치 입력해줘야 해 */
+            top:0,
+            duration:500,
+        });
+        
+        /*first.el.style.border = '1px solid red';*/
+        
+        var seconds = [];
+        var colors = ['#e830ce', '#ff6a63', '#2b97fa', '#e7c501','#c6e501'];
+        for(var i=0; i<6; i++) {
+            var second = new mojs.Shape({
+            parent:first.el, /* first의 종속값으로 */
+            shape:'circle',
+            radius:{
+                0:'rand(30,100)'
+            },
+            stroke:colors[i],
+            strokeWidth:{50:0}, /* 테두리가 있다가 없어지게 */
+            fill:'none',
+            left:'50%', /* 절대위치 입력해줘야 해 */
+            top:'50%',
+            x:'rand(-200,60)',
+            y:'rand(-200,60)',
+            delay:'rand(200,400)',
+            });
+            seconds.push(second); /* second 추가로 생성 */
+        }
+        
+        document.addEventListener('click',function(e){
+            first.tune({
+                x:e.pageX, 
+                y:e.pageY
+            }).replay();
+            for(var i=0; i<seconds.length; i++){
+               seconds[i].generate().replay(); 
+            }
+            
+//마우스포인트따라 first.tune({x:e.pageX, y:e.pageY}).replay();
+//부모가 first라면 부모기준위해 삭제 second.replay();            
+        });
+    </script>
+ 
   <!-- wrapper -->
    <div class="wrapper">
     

@@ -19,9 +19,9 @@
             shape:'circle',
             radius:{0:150},
             stroke:'#02c4e7',
-            strokeWidth:{10:0}, /* 테두리가 있다가 없어지게 */
+            strokeWidth:{10:0}, // 테두리가 있다가 없어지게
             fill:'none',
-            left:0, /* 절대위치 입력해줘야 해 */
+            left:0,     // 절대위치 입력해줘야 해 
             top:0,
             duration:500,
         });
@@ -38,15 +38,15 @@
                 0:'rand(30,100)'
             },
             stroke:colors[i],
-            strokeWidth:{50:0}, /* 테두리가 있다가 없어지게 */
+            strokeWidth:{50:0},   // 테두리가 있다가 없어지게
             fill:'none',
-            left:'50%', /* 절대위치 입력해줘야 해 */
+            left:'50%',    // 절대위치 입력해줘야 해
             top:'50%',
             x:'rand(-200,60)',
             y:'rand(-200,60)',
             delay:'rand(200,400)',
             });
-            seconds.push(second); /* second 추가로 생성 */
+            seconds.push(second); // second 추가로 생성
         }
         
         document.addEventListener('click',function(e){
@@ -58,8 +58,8 @@
                seconds[i].generate().replay(); 
             }
             
-//마우스포인트따라 first.tune({x:e.pageX, y:e.pageY}).replay();
-//부모가 first라면 부모기준위해 삭제 second.replay();            
+                    // 마우스포인트따라 first.tune({x:e.pageX, y:e.pageY}).replay();
+                    // 부모가 first라면 부모기준위해 삭제 second.replay();            
         });
     </script>
  
@@ -67,7 +67,7 @@
    <div class="wrapper">
     
      <!-- left panel -->
-     <div class="left">    <!-- background:rgba(255,255,255) box-shadow:inset -->
+     <div class="left1">    <!-- background:rgba(255,255,255) box-shadow:inset -->
          <div class="leftTop"> 
              <h1><a href="index.html"><embed src="images/logo.svg"></a></h1>
              <span class="contact"><a href="javascript:void(0)">CONTACT</a></span> <!-- line-through -->
@@ -84,7 +84,7 @@
      <!-- contact hover left panel -->
      <div class="left2"> <!-- background:rgba(0,0,0,.8)-->
          <div class="leftTop">
-             <h1><a href="portfolio.html"><embed src="images/logo_w.svg"></a></h1> <!-- stroke:#fff -->
+             <h1><a href="index.html"><embed src="images/logo_w.svg"></a></h1> <!-- stroke:#fff -->
              <span class="home"><a href="javascript:void(0)">HOME</a></span> <!-- line-through -->
          </div>
          <section>
@@ -113,7 +113,7 @@
        </div>
        <!-- portfolio -->
         <div id="portfolio">
-            <a href="#">VIEW PORTFOLIO <i class="icon-plus"></i></a>
+            <a href="#" class="portfolio">VIEW PORTFOLIO <i class="icon-plus"></i></a>
         </div>
      </div>
      
@@ -122,6 +122,6 @@
         <p>ⓒ 2017 SO-YOUNG LIM. ALL RIGHTS RESERVED. </p>
     </footer>-->
    </div> <!-- wrapper -->   
-   <script src="js/custom.js"></script>
+   <script src="js/index.js"></script>
 </body>
 </html>

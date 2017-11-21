@@ -8,27 +8,27 @@ body {width:100%; height:100%; background:#fff; opacity:0; transition:all 1.2s; 
 a { outline:0; text-decoration:none; color:steelblue;}
 img { border:0;}
 
-.wrapper { width:100vw; height:100vh; position:relative;}
+.wrapper { width:100vw; height:100vh; position:relative; overflow: hidden;}
 
 /* left panel */
-.left {position:absolute; width:60%; height:100%; background:rgba(255,255,255); box-shadow:inset 0 0 30px #eee;}
-.left>.leftTop {width:80%; height:15%; padding:10%; position:relative; }
-.left>.leftTop>h1 { float:left; width:60%; }
-.left>.leftTop>.contact a{ float:left; position:relative; margin-top:7%; color:#222; font-weight:600; overflow:hidden;}
-.left>.leftTop>.contact a:before {content:""; position:absolute; left:-5px; top:50%; border-bottom:2px solid #111; width:105%; left:-100px;  transition:left .8s;}
-.left>.leftTop>.contact a:hover:before { left:0; }
+.left1 {position:absolute; width:60%; height:100%; background:rgba(255,255,255); box-shadow:inset 0 0 30px #eee;}
+    .leftTop {width:80%; height:15%; padding:10%; position:relative; }
+    .leftTop>h1 { float:left; width:60%; }
+    .leftTop>.contact a{ float:left; position:relative; margin-top:7%; color:#222; font-weight:600; overflow:hidden;}
+    .leftTop>.contact a:before {content:""; position:absolute; left:-5px; top:50%; border-bottom:2px solid #111; width:105%; left:-100px;  transition:left .8s;}
+    .leftTop>.contact a:hover:before { left:0; }
 
-.left>section { width:100%;}
-.left>section>h2 { font-size:5rem; letter-spacing:1px; position:relative; padding-left:10%; margin-bottom:2%;}
-.left>section>h2>em { width:1%; height:100%; background:#222; position:absolute; left:0;top:0;}
-.left>section>span { padding-left:10%; padding-top:10%; font-weight: 600;}
-.left>section>.dot { width:10px; height:10px; background:#222; margin:8% 0 8% 10%;}
-.left>section>p {padding:1% 20% 1% 10%;}
+.left1>section { width:100%;}
+.left1>section>h2 { font-size:5rem; letter-spacing:1px; position:relative; padding-left:10%; margin-bottom:2%;}
+.left1>section>h2>em { width:1%; height:100%; background:#222; position:absolute; left:0;top:0;}
+.left1>section>span { padding-left:10%; padding-top:10%; font-weight: 600;}
+.left1>section>.dot { width:10px; height:10px; background:#222; margin:8% 0 8% 10%;}
+.left1>section>p {padding:1% 20% 1% 10%;}
 
 /* contact hover left panel */
 .left2 {position:absolute; width:60%; height:100%; background-color:rgba(0,0,0,1); /*box-shadow:inset 0 0 100px #333;*/ z-index: 2; left:-60%; transition:all .5s;}
 .left2>.leftTop {width:80%; height:15%; padding:10%; position:relative; }
-.left2>.leftTop>h1 { float:left; width:60%; }
+.left2>.leftTop>h1 { float:left; width:60%;}
 .left2>.leftTop>.home a{ float:left; position:relative; margin-top:7%; color:#fff; font-weight:600; overflow:hidden;}
 .left2>.leftTop>.home a:before {content:""; position:absolute; left:-5px; top:50%; border-bottom:2px solid #fff; width:105%; left:-100px; transition:left .8s;}
 .left2>.leftTop>.home a:hover:before { left:0; }
@@ -45,21 +45,20 @@ img { border:0;}
 /* right panel */
 .right {position:absolute; right:0; width:40%; height:100%; }
 .slide {position:relative; width:100%; height:100%; overflow:hidden; }
-.slide li {position:absolute; width:100%; height:100%; left:0; top:0; background-size:cover; vertical-align: top;}
+.slide li {position:absolute; width:100%; height:100%; left:0; top:0; background-size:cover; vertical-align: top; }
 
 /*random imgs slide*/
-.slide li.img1{background-image:url(../images/img1.jpg);}
-.slide li.img2{background-image:url(../images/img2.jpg);}
-.slide li.img3{background-image:url(../images/img3.jpg);}
+.img1{background-image:url(../images/img1.jpg);}
+.img2{background-image:url(../images/img2.jpg);}
+.img3{background-image:url(../images/img3.jpg);}
 
-#portfolio { position:fixed; z-index: 10; right:0; bottom:0; width:300px; height:150px; background-color:#fff; text-align: center; line-height: 150px; box-shadow:inset 0 0 30px #eee;}
-#portfolio a {width:100%; height:100%; font-size:1rem; letter-spacing: 2px;}
-#portfolio a i { font-size: 1.1rem;}
+#portfolio { position:fixed; z-index: 10; right:0; bottom:0; width:300px; height:150px; background-color:#fff; text-align: center; line-height: 150px; box-shadow:inset 0 0 50px #ccc; transition:all 2s cubic-bezier(.23,1,.32,1);}
+#portfolio.on { width: 100vw; height: 100vh; right:0; bottom:0; box-shadow:inset 0 0 100px #eee;}
+.portfolio {width:100%; height:100%; font-size:1rem; letter-spacing: 2px; }
+.icon-plus { font-size: 1.1rem;}
 
 
 
-
-@media 
 
 
 
